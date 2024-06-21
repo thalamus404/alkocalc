@@ -1,0 +1,98 @@
+.calculator-container {
+    background-color: #e6f2ff;
+    padding: 20px;
+    border: 2px solid #000;
+    border-radius: 10px;
+    text-align: center;
+    width: 100%;
+    box-sizing: border-box;
+  }
+  
+  h1 {
+    font-weight: bold;
+    color: #000;
+    text-decoration: none;
+  }
+  
+  .input-group {
+    margin: 10px 0;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    position: relative;
+  }
+  
+  label {
+    font-weight: bold;
+    color: #000;
+    margin-right: auto;
+    width: 150px;
+    text-align: left;
+  }
+  
+  input[type="number"] {
+    width: 60px;
+    padding: 5px;
+    border: 1px solid #000;
+    border-radius: 5px;
+    text-align: right;
+    margin-right: 5px;
+  }
+  
+  button {
+    background-color: #ffcc99;
+    border: 1px solid #000;
+    border-radius: 5px;
+    padding: 15px 20px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 10px;
+  }
+  
+  button:hover {
+    background-color: #ffb366;
+  }
+  
+  .result {
+    margin-top: 20px;
+  }
+  
+  .efficiency-value {
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  .slider-container {
+    margin-top: 10px;
+    position: relative;
+  }
+  
+  .slider {
+    -webkit-appearance: none;
+    width: 100%;
+    height: 15px;
+    border-radius: 5px;
+    background: linear-gradient(to right, red, yellow, green);
+    outline: none;
+    border: 1px solid #000;
+  }
+  
+  .slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 25px;
+    height: 25px;
+    background: #fff;
+    border: 2px solid #000;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+  
+  .slider::-moz-range-thumb {
+    width: 25px;
+    height: 25px;
+    background: #fff;
+    border: 2px solid #000;
+    border-radius: 50%;
+    cursor: pointer;
+  }
