@@ -7,10 +7,15 @@ const Calculator = () => {
   const [price, setPrice] = useState('');
   const [efficiency, setEfficiency] = useState(null);
 
+  const normalizeInput = (value) => {
+    // Ersetzt Kommas durch Punkte
+    return value.replace(',', '.');
+  };
+
   const calculateEfficiency = () => {
-    const volumeFloat = parseFloat(volume.replace(',', '.'));
-    const percentageFloat = parseFloat(percentage.replace(',', '.'));
-    const priceFloat = parseFloat(price.replace(',', '.'));
+    const volumeFloat = parseFloat(normalizeInput(volume));
+    const percentageFloat = parseFloat(normalizeInput(percentage));
+    const priceFloat = parseFloat(normalizeInput(price));
     if (isNaN(volumeFloat) || isNaN(percentageFloat) || isNaN(priceFloat)) {
       setEfficiency(null);
       return;
@@ -25,7 +30,7 @@ const Calculator = () => {
       <div className="input-group">
         <label>Menge in Liter:</label>
         <input
-          type="number"
+          type="text"
           inputMode="decimal"
           value={volume}
           onChange={(e) => setVolume(e.target.value)}
@@ -36,7 +41,7 @@ const Calculator = () => {
       <div className="input-group">
         <label>Alkoholgehalt in %:</label>
         <input
-          type="number"
+          type="text"
           inputMode="decimal"
           value={percentage}
           onChange={(e) => setPercentage(e.target.value)}
@@ -47,7 +52,7 @@ const Calculator = () => {
       <div className="input-group">
         <label>Preis in Euro:</label>
         <input
-          type="number"
+          type="text"
           inputMode="decimal"
           value={price}
           onChange={(e) => setPrice(e.target.value)}
