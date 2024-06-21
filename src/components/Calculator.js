@@ -12,18 +12,6 @@ const Calculator = () => {
     return value.replace(',', '.');
   };
 
-  const handleVolumeChange = (e) => {
-    setVolume(e.target.value);
-  };
-
-  const handlePercentageChange = (e) => {
-    setPercentage(e.target.value);
-  };
-
-  const handlePriceChange = (e) => {
-    setPrice(e.target.value);
-  };
-
   const calculateEfficiency = () => {
     const volumeFloat = parseFloat(normalizeInput(volume));
     const percentageFloat = parseFloat(normalizeInput(percentage));
@@ -45,7 +33,7 @@ const Calculator = () => {
           type="text"
           inputMode="decimal"
           value={volume}
-          onChange={handleVolumeChange}
+          onChange={(e) => setVolume(e.target.value)}
           placeholder="0,5"
         />
         <span>L</span>
@@ -56,7 +44,7 @@ const Calculator = () => {
           type="text"
           inputMode="decimal"
           value={percentage}
-          onChange={handlePercentageChange}
+          onChange={(e) => setPercentage(e.target.value)}
           placeholder="5,2"
         />
         <span>%</span>
@@ -67,7 +55,7 @@ const Calculator = () => {
           type="text"
           inputMode="decimal"
           value={price}
-          onChange={handlePriceChange}
+          onChange={(e) => setPrice(e.target.value)}
           placeholder="1,29"
         />
         <span>€</span>
