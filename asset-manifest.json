@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/alkocalc/static/css/main.cc645729.css",
-    "main.js": "/alkocalc/static/js/main.5bf48134.js",
+    "main.js": "/alkocalc/static/js/main.d1caf0f8.js",
     "index.html": "/alkocalc/index.html",
     "main.cc645729.css.map": "/alkocalc/static/css/main.cc645729.css.map",
-    "main.5bf48134.js.map": "/alkocalc/static/js/main.5bf48134.js.map"
+    "main.d1caf0f8.js.map": "/alkocalc/static/js/main.d1caf0f8.js.map"
   },
   "entrypoints": [
     "static/css/main.cc645729.css",
-    "static/js/main.5bf48134.js"
+    "static/js/main.d1caf0f8.js"
   ]
 }
