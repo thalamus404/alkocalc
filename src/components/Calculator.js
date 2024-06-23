@@ -26,7 +26,7 @@ const Calculator = () => {
 
   return (
     <div className="calculator-container">
-      <h1>Alkocalc</h1>
+      <h1>Palometer</h1>
       <div className="input-group">
         <label>Menge in Liter:</label>
         <input
